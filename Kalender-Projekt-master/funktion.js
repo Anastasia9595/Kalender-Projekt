@@ -171,4 +171,5 @@ function getCalendarweek(calendarweekDayIndex) {
     } else if (calendarweekDayIndex <= 28) {
         return "vierte";
     } else return "fünfte";
-}
+} 
+55
