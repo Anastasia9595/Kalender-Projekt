@@ -1,0 +1,133 @@
+#seitenkopf { 
+    background: orange;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#kalenderblatt {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-bottom: 1px solid orange;
+    border-left: 1px solid orange;
+}
+
+#kalenderblatt table {
+    margin: 30px auto; 
+    border-top: 1.5px solid orangered ;
+    border-right: 1.5px solid orangered;
+    border-bottom: 1.5px solid orangered;
+    border-left: 1.5px solid orangered;
+    border-spacing: inherit;
+    border-collapse: collapse;
+}
+
+#kalenderblatt table th {
+        border-left: 1.5px solid orangered;
+        border-bottom: 1.5px solid orangered;
+}
+
+#kalenderblatt table td.mo,
+td.di,
+td.mi,
+td.do,
+td.fr,
+td.sa,
+td.so {
+    text-align: center;
+    padding: 0.25em;
+    cursor: pointer;
+    width: 20px;
+}
+
+#kalenderblatt td.sa {
+    color: blue;
+}
+
+#kalenderblatt td.so {
+    color: red;
+}
+
+#kalenderblatt table thead tr th {
+    background-color: orange;
+    border-top: 1.5px solid orangered;
+}
+
+th.kw,
+th.mo,
+th.di,
+th.mi,
+th.do,
+th.fr {
+    background: orange;
+    font-weight: lighter;
+}
+
+th.sa,
+th.so {
+    background: orange;
+}
+
+#kalenderblatt td.heute {
+    background: lightsalmon;
+}
+
+#kalenderblatt td:hover {
+    background: lightyellow;
+}
+
+#kalenderblatt td.heute:hover {
+    background: lightsalmon;
+}
+
+#kalenderblatt td.kw:hover {
+    background: unset;
+}
+
+
+#introtext {
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 1em;
+}
+
+
+#historie {
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 1em;
+
+}
+
+#debug {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-left: 1px solid orange;
+    border-bottom: 1px solid orange;
+    background: lightcoral;
+}
+
+.kw {
+    font-size: smaller;
+    text-align: center;
+    border-right: 1.5px solid orangered;
+}
+
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0;
+}
+
+span {
+    background: lightcoral;
+}
